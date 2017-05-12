@@ -1,0 +1,127 @@
+.open-ticket.ticket-trigger,
+.form-wrapper .passenger-details-header .provide-later-message {
+	display: none;    
+}
+.route-legs-wrapper {
+	flex-basis: 70%;
+}
+.route-legs-wrapper .form-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+.route-legs-wrapper .leg-info-wrapper {
+	border: 1px solid #eaeaf5;
+}
+.passenger-details-header {
+	border: 1px solid #eaeaf5;
+	border-top: none;
+}
+.route-legs-wrapper .leg-info-header, 
+.route-legs-wrapper .leg-info-body {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.route-legs-wrapper .leg-info-header {
+	background: rgba(154, 132, 132, 0.12);
+}
+.route-legs-wrapper .leg-info-body, 
+.passenger-form-header-wrapper {
+	padding: 4%;
+}
+.passenger-details-header {
+	padding: 2% 4%;
+	background: rgba(154, 132, 132, 0.12);
+}
+.route-legs-wrapper .leg-info-header-left {
+	flex-basis: 60%;
+	/*outline: 1px solid #eaeaf5;*/
+	padding: 4%;
+	
+}
+.leg-info-body .column {
+	flex-basis: calc(100%/3);
+}
+
+.route-legs-wrapper .leg-info-header-right {
+	flex-basis: 40%;
+	padding: 5%;
+}
+.leg-info-header-left .stations,
+.leg-info-header-right .count,
+.leg-info-body .info-title,
+.leg-info-body .middle {
+	
+    margin-bottom: 15px;
+}
+/*-------------------------------------------------------------------------------*/
+.passenger-wrapper {
+	border: 1px solid black;
+}
+.passenger-wrapper .fields-wrapper {
+	border-top: 1px solid #eaeaf5;	
+}
+
+.passenger-wrapper .internal-fields-wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+
+.internal-fields-wrapper [class*="citizenship"],
+.internal-fields-wrapper [#*="dob"],
+.internal-fields-wrapper [class*="first-name"],
+.internal-fields-wrapper [class*="last-name"] {
+	flex-basis: 30%;
+	width: 30%;
+}
+
+.internal-fields-wrapper [class*="gender"],
+.internal-fields-wrapper [class*="id-number"] {
+	flex-basis: 20%;
+	width: 20%;
+}
+.train-bookingpassenger-form .all-passengers-wrapper .internal-fields-wrapper .form-item {
+    height: 100%;
+
+/*.internal-fields-wrapper [class*="first-name"] label,
+.internal-fields-wrapper [class*="last-name"] label {
+	flex-basis: 30%;
+}
+.internal-fields-wrapper [class*="first-name"] input,
+.internal-fields-wrapper [class*="last-name"] label {
+	flex-basis: 100%;
+}*/
+
+
+
+/*
+.passenger-wrapper .internal-fields-wrapper {
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.train-bookingpassenger-form .all-passengers-wrapper .passenger-wrapper.rzd-passenger-form .internal-fields-wrapper > div:nth-of-type(3n+1) {
+    flex-basis: 37%;
+    width: 37%;
+}
+.train-bookingpassenger-form .all-passengers-wrapper .internal-fields-wrapper .form-item {
+    height: 100%;
+}
+.train-bookingpassenger-form .all-passengers-wrapper .passenger-wrapper.rzd-passenger-form .internal-fields-wrapper > div:nth-of-type(3n+2) {
+    flex-basis: 37%;
+    width: 37%;
+}
+.train-bookingpassenger-form .all-passengers-wrapper .passenger-wrapper.rzd-passenger-form .internal-fields-wrapper > div:nth-of-type(3n+3) {
+    flex-basis: 21%;
+    width: 21%;
+}*/

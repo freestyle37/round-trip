@@ -1,0 +1,20 @@
+.header-container,
+.visually-hidden /*skip to main content*/ {
+	display: none;
+}
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+.train-booking-passenger-form {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    justify-content: space-between;
+    font-family: Arial,sans-serif;
+    font-size: 1rem;
+}
