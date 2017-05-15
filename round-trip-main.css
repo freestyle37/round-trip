@@ -7,10 +7,15 @@
 }
 a {
 	text-decoration: none;
+	color: black;
 }
 body {
     padding: 0;
     margin: 0;
+}
+li {
+	list-style: none;
+	padding-bottom: 10px;
 }
 .train-booking-passenger-form {
     display: flex;
