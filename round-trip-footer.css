@@ -1,0 +1,21 @@
+.pr-footer__footer .only-mobile,
+.pr-footer__footer .footer-tel,
+#block-footermail,
+.pr-footer__footer .footerlanguage {
+	display: none;
+}
+
+.pr-footer__footer {
+	/*background: #eaeaea;*/
+	margin: 0 auto;	  max-width: 1024px;
+}
+.page .footer-container {
+    font-family: "Helvetica Neue",Arial,sans-serif;
+   	background: #eaeaea;
+    color: #4b4b4b;
+    padding: 40px 0;
+    width: 100%;
+  
+    
+
+}

@@ -67,9 +67,46 @@
    	box-shadow: 0 0 0 8px rgba(119,119,119,0.4);
     transition: 0.4s linear;
 	}
+    .booking-progress-bar .past:hover .line {
+        background: #a59696;
+    }
 	
 	.booking-progress-bar.steps-4 .last {
     position: absolute;
     right: 0;
     top: 0;
 	}
+    .booking-progress-bar .pre-last .step {
+        left: 0px;
+    }
+.booking-progress-bar .active .circle {
+    background: #f9b558;
+    box-shadow: 0 0 0 8px rgba(247, 156, 27, 0.36);
+}
+
+.next.last .circle::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 4px;
+    background: white;
+    transform: rotate(135deg);
+    left: 15px;
+}
+
+.next.last .circle::after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 4px;
+    background: white;
+    transform: rotate(45deg);
+    left: 9px;
+    bottom: 15px;
+}
+.booking-progress-bar .active .step {
+    color: #f9b558;
+}
+.booking-progress-bar .active .line {
+    background: #f9b558;
+}
