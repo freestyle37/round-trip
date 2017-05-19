@@ -1,4 +1,7 @@
-.header-container,
+/*.header-container,*/
+.mobile-menu-block,
+.block-config-provider--rn-user,
+
 .visually-hidden /*skip to main content*/ {
 	display: none;
 }
