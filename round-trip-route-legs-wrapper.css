@@ -1,5 +1,7 @@
 .open-ticket.ticket-trigger,
-.form-wrapper .passenger-details-header .provide-later-message {
+.form-wrapper .passenger-details-header .provide-later-message,
+.train-booking-passenger-form .route-legs-wrapper .passenger-details-header,
+.passenger-details-header {
 	display: none;    
 }
 .route-legs-wrapper {
@@ -128,16 +130,7 @@ option {
     min-height: 1.2em;
     padding: 0px 2px 1px;
 }
-.leg-info-header-right::before {
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 40px;
-    background: #dae0c7;
-    left: 2px;
-    top: 5px;
-    box-shadow: 10px 0px 3px 0px rgba(145, 167, 157, 0.2);
-}
+
 .passenger-wrapper.rzd-passenger-form .passenger-form-header-wrapper::before {
     
     content: "";
@@ -244,7 +237,6 @@ label.option {
     border: none;
     color: white;
     cursor: pointer;
-    border-top: 1px solid #cecdcd;
 }
 
 [data-drupal-selector="edit-actions"] input {
@@ -253,4 +245,23 @@ label.option {
     font-size: 1.1rem;
     border: none;
     color: white;
+}
+span.departure.value::after {
+    font-family: 'FontAwesome';
+    content: "\f2d6";
+    font-size: 1.25rem;
+    margin: 0px 20px;
+    line-height: 1;
+    left: 1px;
+    top: 0;
+}
+.train-bookingpassenger-form .leg-info-wrapper .number {
+    font-size: 1.625rem;
+}
+span.small-font-size {
+    font-size: 1rem;
+    color: #acacad;
+}
+.page__row form .route-legs-wrapper {
+    width: 100%;
 }

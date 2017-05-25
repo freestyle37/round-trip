@@ -1,6 +1,9 @@
 .pr-footer__footer .only-mobile,
-.pr-footer__footer .footer-tel, .pr-footer__footer .footerlanguage,
-#block-footermail
+.pr-footer__footer .footer-tel,
+.pr-footer__footer .footerlanguage,
+#block-footermail,
+.mail.footer-icon,
+.footerlanguage h2
  {
 	display: none;
 }
@@ -16,11 +19,11 @@
 .page .footer-container {
     font-family: "Helvetica Neue",Arial,sans-serif;
    	background: #eaeaea;
-    color: #4b4b4b;
-    padding: 40px 0;
+    color: #615d5d;
+    padding: 40px 20px;
     width: 100%;
 }
-.page .pr-footer__footer .block {
+.page .pr-footer__footer>.block {
     margin: 0;
     flex-basis: 25%;
 }
@@ -56,7 +59,7 @@
 .field-name-body.field-type-text-with-summary p {
 	margin: 0;
 }
-.page .pr-footer__footer .footer-icon {
+.block-plugin-id--footer-icons .block__content .footer-icon {
 	width: 48px;
     height: 48px;
     background-color: #777777;
@@ -66,11 +69,12 @@
     cursor: pointer;
 }
 
-.page .pr-footer__footer .footer-icon.tel {
+.block-plugin-id--footer-icons .block__content .footer-icon.tel {
     background-position: -51px 0;
 }
 .page .pr-footer__footer .footer-icon.lang {
 	 background-position: -102px 0;
+	 color: transparent;
 }
 .pr-footer__footer .block-plugin-id--footer-icons .block__content {
 	display: flex;
@@ -86,35 +90,55 @@
 }
 .block-plugin-id--block-contenta6413482-a6ed-48fc-8b15-e135244e494a p {
 	/*display: block;*/
-	width: 1024px;
+	width: auto;
+	max-width: 100%;
 	height: 32px;
 	background: url(stripe-grey_0.png) no-repeat;
+	background-size: 100%;
 }
 
-.pr-footer__footer .footer-tel {
+.pr-footer__footer .footer-tel, .pr-footer__footer .footerlanguage {
 	width: 100%;
 	height: 450px;
 	position: absolute;
-	background: #d0c5c5;
+	background: #eaeaea;
 }
 .l-r.region.pr-footer__footer {
 	position: relative;
 }
-.pr-footer__footer .footer-tel .block__inner {
+.pr-footer__footer .footer-tel .block__inner,
+.pr-footer__footer .footerlanguage .block__inner {
 	height: 100%;
-}
-.pr-footer__footer .footer-tel .block__content {
 	display: flex;
-	height: 100%;
-	padding: 40px;
+    align-items: center;
 }
-.pr-footer__footer .footer-tel .block__content div {
-	flex-basis: 33%;
+.pr-footer__footer .footer-tel .block__content,
+.pr-footer__footer .footerlanguage .block__content {
+	display: flex;
+	width: 100%;
+	padding: 40px 0px 40px 10px;
 }
-.pr-footer__footer .footer-tel .block__content .footer-arrow {
-	position: relative;
+.pr-footer__footer /*.footer-tel*/ .block__content .block-title {
+	flex-basis: 25%;
+	padding-top: 20px;
 }
-.pr-footer__footer .footer-tel .block__content .footer-arrow::before,
+.pr-footer__footer /*.footer-tel*/ .block__content .block-content {
+	flex-basis: 70%;
+	display: flex;
+    align-items: center;
+}
+.pr-footer__footer /*.footer-tel*/ .block__content .footer-arrow {
+	flex-basis: 5%;
+}
+
+/*.pr-footer__footer .footer-tel .block__content */.footer-arrow {
+	/*position: relative;*/
+	background: url(footer-arrow-right.svg) no-repeat 50% 50%;
+    cursor: pointer;
+    /*outline: 1px solid black;*/
+    margin-left: 50px; /*flex-basis: 5%;*/
+}
+/*.pr-footer__footer .footer-tel .block__content .footer-arrow::before,
 .pr-footer__footer .footer-tel .block__content .footer-arrow::after {
 	position: absolute;
 	content: "" ;
@@ -123,7 +147,7 @@
 	cursor: pointer;
 	background: #ab9f9f;
 	left: 80%;
-}
+}*/
 
 .pr-footer__footer .footer-tel .block__content .footer-arrow::before {
 	transform: rotate(60deg);
@@ -138,5 +162,51 @@
 	background: red;
 } 
 .pr-footer__footer .footer-tel {
-	transition: 0.5s liner;
+	transition: 0.5s linear;
+}
+.block-config-provider--rn-content .contacts {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0 25px;
+}
+.page .pr-footer__footer .contacts .item {
+    font-size: 1.625rem;
+    line-height: 120%;
+    margin-bottom: 38px;
+}
+.pr-footer__footer .whole-footer {
+	width: 100%;
+	height: 100%;
+}
+.block-title .large-icon .footer-icon.tel,
+.footerlanguage .footer-icon .inner-icon {
+	background: url(footer-icons-default.png) no-repeat;
+    width: 60px;
+    height: 60px;
+    background-size: 180px;
+    margin: 0 auto;
+    color: transparent;
+}
+.block-title .large-icon .footer-icon.tel {
+	background-position: -60px 0;
+}
+.footerlanguage .footer-icon .inner-icon {
+	background-position: -120px 0;
+}
+.block-title .footer-title {
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 20px 0;
+}
+.block-title .footer-subtitle {
+	font-size: 1.3rem;
+	line-height: 130%;
+	text-align: center;
+}
+.page .pr-footer__footer .contacts .item:last-of-type {
+    margin: 0;
+}
+.pr-footer__footer .footerlanguage .block__content {
+	display: flex;
 }
